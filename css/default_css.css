@@ -1,0 +1,160 @@
+#example{
+  position: relative;
+  width: 550px;
+  height: 200px;
+  background-color: yellow;
+  z-index: 10;
+}
+.square{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 20000;
+  background-color: blue;
+}
+#myContainer {
+  width: 550px;
+  height: 200px;
+  position: relative;
+  background: yellow;
+}
+#lever1 {
+  top: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+#lever2 {
+  top: 50px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+#lever3 {
+  top: 50px;
+  left: 150px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+#lever4 {
+  top: 50px;
+  left: 200px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+#lever5 {
+  top: 50px;
+  left: 250px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+#lever6 {
+  top: 50px;
+  left: 300px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+#lever7 {
+  top: 50px;
+  left: 350px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+#lever8 {
+  top: 50px;
+  left: 400px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+#lever9 {
+  top: 50px;
+  left: 450px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+#s1 {
+  left: 150px;
+  top: 150px;
+}
+#s2 {
+  left: 350px;
+  top: 150px;
+}
+#button1 {
+  width: 50px;
+  font-size: 10px;
+  margin-left: 50px;
+}
+#button2 {
+  width: 50px;
+  font-size: 10px;
+}
+#button3 {
+  width: 50px;
+  font-size: 10px;
+}
+#button4 {
+  width: 50px;
+  font-size: 10px;
+}
+#button5 {
+  width: 50px;
+  font-size: 10px;
+}
+#button6 {
+  width: 50px;
+  font-size: 10px;
+}
+#button7 {
+  width: 50px;
+  font-size: 10px;
+}
+#button8 {
+  width: 50px;
+  font-size: 10px;
+}
+#button9 {
+  width: 50px;
+  font-size: 10px;
+}
+.selected {
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:        0px -4px 3px rgba(50, 50, 50, 0.75);
+}
