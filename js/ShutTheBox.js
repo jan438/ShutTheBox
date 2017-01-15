@@ -209,6 +209,7 @@ function upMove1() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			levertotal = levertotal - 1;
 		}
 		else {
 			pos--;
@@ -223,6 +224,7 @@ function upMove2() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			levertotal = levertotal - 2;
 		}
 		else {
 			pos--;
@@ -237,6 +239,7 @@ function upMove3() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			levertotal = levertotal - 3;
 		}
 		else {
 			pos--;
@@ -251,6 +254,7 @@ function upMove4() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			levertotal = levertotal - 4;
 		}
 		else {
 			pos--;
@@ -265,6 +269,7 @@ function upMove5() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			levertotal = levertotal - 5;
 		}
 		else {
 			pos--;
@@ -279,6 +284,7 @@ function upMove6() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			levertotal = levertotal - 6;
 		}
 		else {
 			pos--;
@@ -293,6 +299,7 @@ function upMove7() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			levertotal = levertotal - 7;
 		}
 		else {
 			pos--;
@@ -307,6 +314,7 @@ function upMove8() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			levertotal = levertotal - 8;
 		}
 		else {
 			pos--;
@@ -321,6 +329,7 @@ function upMove9() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			levertotal = levertotal - 9;
 		}
 		else {
 			pos--;
