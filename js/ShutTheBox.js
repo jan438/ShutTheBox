@@ -2,6 +2,7 @@ var indexoftotal;
 var setnumbers;
 var leverdown = [false,false,false,false,false,false,false,false,false];
 var setindex = [2,3,4,5,6,7,8,9,10,11,12];
+var levertotal = 0;
 var settochoose = [[[2]],[[3],[2,1]],[[4],[3,1]],[[5],[4,1],[3,2]],[[6],[5,1],[4,2]],[[7],[6,1],[5,2],[4,3]],[[8],[7,1],[6,2],[5,3],[5,2,1],[4,3,1]],[[9],[8,1],[7,2],[6,2,1],[5,4],[5,3,1]],[[9,1],[8,2],[7,3],[7,2,1],[6,4],[6,3,1],[5,4,1],[5,3,2]],[[9,2],[8,3],[8,2,1],[7,4],[7,3,1],[6,5],[6,4,1],[6,3,2]],[[9,3],[9,2,1],[8,4],[8,3,1],[7,5],[7,4,1],[7,3,2],[6,5,1],[6,4,2],[5,4,3]]];
 var ShutTheBox = {};
 ShutTheBox.info = {sum: 0, result_string: "", results_id: "__results"};
@@ -46,6 +47,7 @@ function downMove1() {
 		if (pos === 100) {
 			clearInterval(id);
 			leverdown[0] = true;
+			levertotal = levertotal + 1;
 			$("#lever1").html('');
 		}
 		else {
@@ -63,6 +65,7 @@ function downMove2() {
 		if (pos === 100) {
 			clearInterval(id);
 			leverdown[1] = true;
+			levertotal = levertotal + 2;
 			$("#lever2").html('');
 		}
 		else {
@@ -80,6 +83,7 @@ function downMove3() {
 		if (pos === 100) {
 			clearInterval(id);
 			leverdown[2] = true;
+			levertotal = levertotal + 3;
 			$("#lever3").html('');
 		}
 		else {
@@ -97,6 +101,7 @@ function downMove4() {
 		if (pos === 100) {
 			clearInterval(id);
 			leverdown[3] = true;
+			levertotal = levertotal + 4;
 			$("#lever4").html('');
 		}
 		else {
@@ -114,6 +119,7 @@ function downMove5() {
 		if (pos === 100) {
 			clearInterval(id);
 			leverdown[4] = true;
+			levertotal = levertotal + 5;
 			$("#lever5").html('');
 		}
 		else {
@@ -131,6 +137,7 @@ function downMove6() {
 		if (pos === 100) {
 			clearInterval(id);
 			leverdown[5] = true;
+			levertotal = levertotal + 6;
 			$("#lever6").html('');
 		}
 		else {
@@ -148,6 +155,7 @@ function downMove7() {
 		if (pos === 100) {
 			clearInterval(id);
 			leverdown[6] = true;
+			levertotal = levertotal + 7;
 			$("#lever7").html('');
 		}
 		else {
@@ -165,6 +173,7 @@ function downMove8() {
 		if (pos === 100) {
 			clearInterval(id);
 			leverdown[7] = true;
+			levertotal = levertotal + 8;
 			$("#lever8").html('');
 		}
 		else {
@@ -182,6 +191,7 @@ function downMove9() {
 		if (pos === 100) {
 			clearInterval(id);
 			leverdown[8] = true;
+			levertotal = levertotal + 9;
 			$("#lever9").html('');
 		}
 		else {
