@@ -41,7 +41,13 @@ ShutTheBox.callback = function(total, info, results) {
 	}
 }
 function fixlevers() {
-	sweetAlert("Good", "The sum of the levers is equal to the dice total!", "info");
+	swal({
+		title: "<h4 id='swalsumequal'>The sum of the levers is equal to the dice total!</h4>",
+		imageUrl: "die-6.gif",
+		timer: 30000,
+		showConfirmButton: true,
+		html: true
+	});
 }
 function downMove1() {
 	if (!leverdown[0]) {
