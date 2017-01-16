@@ -239,6 +239,7 @@ function upMove1() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			leverdown[0] = false;
 			levertotal = levertotal - 1;
 		}
 		else {
@@ -254,6 +255,7 @@ function upMove2() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			leverdown[1] = false;
 			levertotal = levertotal - 2;
 		}
 		else {
@@ -269,6 +271,7 @@ function upMove3() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			leverdown[2] = false;
 			levertotal = levertotal - 3;
 		}
 		else {
@@ -284,6 +287,7 @@ function upMove4() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			leverdown[3] = false;
 			levertotal = levertotal - 4;
 		}
 		else {
@@ -299,6 +303,7 @@ function upMove5() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			leverdown[4] = false;
 			levertotal = levertotal - 5;
 		}
 		else {
@@ -314,6 +319,7 @@ function upMove6() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			leverdown[5] = false;
 			levertotal = levertotal - 6;
 		}
 		else {
@@ -329,6 +335,7 @@ function upMove7() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			leverdown[6] = false;
 			levertotal = levertotal - 7;
 		}
 		else {
@@ -344,6 +351,7 @@ function upMove8() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			leverdown[7] = false;
 			levertotal = levertotal - 8;
 		}
 		else {
@@ -359,6 +367,7 @@ function upMove9() {
 	function frame() {
 		if (pos === 50) {
 			clearInterval(id);
+			leverdown[8] = false;
 			levertotal = levertotal - 9;
 		}
 		else {
