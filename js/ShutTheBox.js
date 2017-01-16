@@ -233,155 +233,173 @@ function downMove9() {
 	}
 }
 function upMove1() {
-	var elem = document.getElementById("lever1");
-	$("#lever1").html('1');
-	var pos = 100;
-	var id = setInterval(frame, 10);
-	function frame() {
-		if (pos === 50) {
-			clearInterval(id);
-			leverdown[0] = false;
-			levertotal = levertotal - 1;
-		}
-		else {
-			pos--;
-			elem.style.top = pos + 'px';
+	if (leverdown[0]) {
+		var elem = document.getElementById("lever1");
+		$("#lever1").html('1');
+		var pos = 100;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos === 50) {
+				clearInterval(id);
+				leverdown[0] = false;
+				levertotal = levertotal - 1;
+			}
+			else {
+				pos--;
+				elem.style.top = pos + 'px';
+			}
 		}
 	}
 }
 function upMove2() {
-	var elem = document.getElementById("lever2");
-	$("#lever2").html('2');
-	var pos = 100;
-	var id = setInterval(frame, 10);
-	function frame() {
-		if (pos === 50) {
-			clearInterval(id);
-			leverdown[1] = false;
-			levertotal = levertotal - 2;
-		}
-		else {
-			pos--;
-			elem.style.top = pos + 'px';
+	if (leverdown[1]) {
+		var elem = document.getElementById("lever2");
+		$("#lever2").html('2');
+		var pos = 100;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos === 50) {
+				clearInterval(id);
+				leverdown[1] = false;
+				levertotal = levertotal - 2;
+			}
+			else {
+				pos--;
+				elem.style.top = pos + 'px';
+			}
 		}
 	}
 }
 function upMove3() {
-	var elem = document.getElementById("lever3");
-	$("#lever3").html('3');
-	var pos = 100;
-	var id = setInterval(frame, 10);
-	function frame() {
-		if (pos === 50) {
-			clearInterval(id);
-			leverdown[2] = false;
-			levertotal = levertotal - 3;
-		}
-		else {
-			pos--;
-			elem.style.top = pos + 'px';
+	if (leverdown[2]) {
+		var elem = document.getElementById("lever3");
+		$("#lever3").html('3');
+		var pos = 100;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos === 50) {
+				clearInterval(id);
+				leverdown[2] = false;
+				levertotal = levertotal - 3;
+			}
+			else {
+				pos--;
+				elem.style.top = pos + 'px';
+			}
 		}
 	}
 }
 function upMove4() {
-	var elem = document.getElementById("lever4");
-	$("#lever4").html('4');
-	var pos = 100;
-	var id = setInterval(frame, 10);
-	function frame() {
-		if (pos === 50) {
-			clearInterval(id);
-			leverdown[3] = false;
-			levertotal = levertotal - 4;
-		}
-		else {
-			pos--;
-			elem.style.top = pos + 'px';
+	if (leverdown[3]) {
+		var elem = document.getElementById("lever4");
+		$("#lever4").html('4');
+		var pos = 100;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos === 50) {
+				clearInterval(id);
+				leverdown[3] = false;
+				levertotal = levertotal - 4;
+			}
+			else {
+				pos--;
+				elem.style.top = pos + 'px';
+			}
 		}
 	}
 }
 function upMove5() {
-	var elem = document.getElementById("lever5");
-	$("#lever5").html('5');
-	var pos = 100;
-	var id = setInterval(frame, 10);
-	function frame() {
-		if (pos === 50) {
-			clearInterval(id);
-			leverdown[4] = false;
-			levertotal = levertotal - 5;
-		}
-		else {
-			pos--;
-			elem.style.top = pos + 'px';
+	if (leverdown[4]) {
+		var elem = document.getElementById("lever5");
+		$("#lever5").html('5');
+		var pos = 100;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos === 50) {
+				clearInterval(id);
+				leverdown[4] = false;
+				levertotal = levertotal - 5;
+			}
+			else {
+				pos--;
+				elem.style.top = pos + 'px';
+			}
 		}
 	}
 }
 function upMove6() {
-	var elem = document.getElementById("lever6");
-	$("#lever6").html('6');
-	var pos = 100;
-	var id = setInterval(frame, 10);
-	function frame() {
-		if (pos === 50) {
-			clearInterval(id);
-			leverdown[5] = false;
-			levertotal = levertotal - 6;
-		}
-		else {
-			pos--;
-			elem.style.top = pos + 'px';
+	if (leverdown[5]) {
+		var elem = document.getElementById("lever6");
+		$("#lever6").html('6');
+		var pos = 100;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos === 50) {
+				clearInterval(id);
+				leverdown[5] = false;
+				levertotal = levertotal - 6;
+			}
+			else {
+				pos--;
+				elem.style.top = pos + 'px';
+			}
 		}
 	}
 }
 function upMove7() {
-	var elem = document.getElementById("lever7");
-	$("#lever7").html('7');
-	var pos = 100;
-	var id = setInterval(frame, 10);
-	function frame() {
-		if (pos === 50) {
-			clearInterval(id);
-			leverdown[6] = false;
-			levertotal = levertotal - 7;
-		}
-		else {
-			pos--;
-			elem.style.top = pos + 'px';
+	if (leverdown[6]) {
+		var elem = document.getElementById("lever7");
+		$("#lever7").html('7');
+		var pos = 100;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos === 50) {
+				clearInterval(id);
+				leverdown[6] = false;
+				levertotal = levertotal - 7;
+			}
+			else {
+				pos--;
+				elem.style.top = pos + 'px';
+			}
 		}
 	}
 }
 function upMove8() {
-	var elem = document.getElementById("lever8");
-	$("#lever8").html('8');
-	var pos = 100;
-	var id = setInterval(frame, 10);
-	function frame() {
-		if (pos === 50) {
-			clearInterval(id);
-			leverdown[7] = false;
-			levertotal = levertotal - 8;
-		}
-		else {
-			pos--;
-			elem.style.top = pos + 'px';
+	if (leverdown[7]) {
+		var elem = document.getElementById("lever8");
+		$("#lever8").html('8');
+		var pos = 100;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos === 50) {
+				clearInterval(id);
+				leverdown[7] = false;
+				levertotal = levertotal - 8;
+			}
+			else {
+				pos--;
+				elem.style.top = pos + 'px';
+			}
 		}
 	}
 }
 function upMove9() {
-	var elem = document.getElementById("lever9");
-	$("#lever9").html('9');
-	var pos = 100;
-	var id = setInterval(frame, 10);
-	function frame() {
-		if (pos === 50) {
-			clearInterval(id);
-			leverdown[8] = false;
-			levertotal = levertotal - 9;
-		}
-		else {
-			pos--;
-			elem.style.top = pos + 'px';
+	if (leverdown[8]) {
+		var elem = document.getElementById("lever9");
+		$("#lever9").html('9');
+		var pos = 100;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos === 50) {
+				clearInterval(id);
+				leverdown[8] = false;
+				levertotal = levertotal - 9;
+			}
+			else {
+				pos--;
+				elem.style.top = pos + 'px';
+			}
 		}
 	}
 }
