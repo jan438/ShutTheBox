@@ -40,6 +40,9 @@ ShutTheBox.callback = function(total, info, results) {
 		if (sum === total) break;
 	}
 }
+function fixlevers() {
+	sweetAlert("Good", "The sum of the levers is equal to the dice total!", "info");
+}
 function downMove1() {
 	var elem = document.getElementById("lever1");
 	$("#lever1").html('1');
@@ -51,6 +54,7 @@ function downMove1() {
 			leverdown[0] = true;
 			levertotal = levertotal + 1;
 			$("#lever1").html('');
+			if (levertotal === dicetotal) fixlevers();
 		}
 		else {
 			pos++;
@@ -69,6 +73,7 @@ function downMove2() {
 			leverdown[1] = true;
 			levertotal = levertotal + 2;
 			$("#lever2").html('');
+			if (levertotal === dicetotal) fixlevers();
 		}
 		else {
 			pos++;
@@ -87,6 +92,7 @@ function downMove3() {
 			leverdown[2] = true;
 			levertotal = levertotal + 3;
 			$("#lever3").html('');
+			if (levertotal === dicetotal) fixlevers();
 		}
 		else {
 			pos++;
@@ -105,6 +111,7 @@ function downMove4() {
 			leverdown[3] = true;
 			levertotal = levertotal + 4;
 			$("#lever4").html('');
+			if (levertotal === dicetotal) fixlevers();
 		}
 		else {
 			pos++;
@@ -123,6 +130,7 @@ function downMove5() {
 			leverdown[4] = true;
 			levertotal = levertotal + 5;
 			$("#lever5").html('');
+			if (levertotal === dicetotal) fixlevers();
 		}
 		else {
 			pos++;
@@ -141,6 +149,7 @@ function downMove6() {
 			leverdown[5] = true;
 			levertotal = levertotal + 6;
 			$("#lever6").html('');
+			if (levertotal === dicetotal) fixlevers();
 		}
 		else {
 			pos++;
@@ -159,6 +168,7 @@ function downMove7() {
 			leverdown[6] = true;
 			levertotal = levertotal + 7;
 			$("#lever7").html('');
+			if (levertotal === dicetotal) fixlevers();
 		}
 		else {
 			pos++;
@@ -177,6 +187,7 @@ function downMove8() {
 			leverdown[7] = true;
 			levertotal = levertotal + 8;
 			$("#lever8").html('');
+			if (levertotal === dicetotal) fixlevers();
 		}
 		else {
 			pos++;
@@ -195,6 +206,7 @@ function downMove9() {
 			leverdown[8] = true;
 			levertotal = levertotal + 9;
 			$("#lever9").html('');
+			if (levertotal === dicetotal) fixlevers();
 		}
 		else {
 			pos++;
