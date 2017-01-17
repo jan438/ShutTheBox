@@ -1,6 +1,7 @@
 var indexoftotal;
 var setnumbers;
 var leverdown = [false,false,false,false,false,false,false,false,false];
+var leverfixed = [false,false,false,false,false,false,false,false,false];
 var setindex = [2,3,4,5,6,7,8,9,10,11,12];
 var levertotal = 0;
 var dicetotal = 0;
@@ -48,6 +49,11 @@ function fixlevers() {
 		showConfirmButton: true,
 		html: true
 	});
+	for (var i = 0; i < leverdown.length; i++) {
+		if (leverdown[i]) {
+			leverfixed[i] = leverdown[i];
+		}
+	}
 }
 function downMove1() {
 	if (!leverdown[0]) {
