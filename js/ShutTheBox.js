@@ -11,6 +11,7 @@ ShutTheBox.info = {sum: 0, result_string: "", results_id: "__results"};
 ShutTheBox.callback = function(total, info, results) {
 	dicetotal = total;
 	levertotal = 0;
+	$("#dicebutton").prop('disabled', true);
 	info.result_string = "(" + results[0] + "," + results[1] + ")";
 	indexoftotal = setindex.indexOf(total);
 	setnumbers = settochoose[indexoftotal];
@@ -55,6 +56,7 @@ function fixlevers() {
 			leverfixed[i] = leverdown[i];
 		}
 	}
+	$("#dicebutton").prop('disabled', false);
 }
 function clearlevers() {
 	swal({
