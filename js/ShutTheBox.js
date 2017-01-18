@@ -10,6 +10,7 @@ var ShutTheBox = {};
 ShutTheBox.info = {sum: 0, result_string: "", results_id: "__results"};
 ShutTheBox.callback = function(total, info, results) {
 	dicetotal = total;
+	levertotal = 0;
 	info.result_string = "(" + results[0] + "," + results[1] + ")";
 	indexoftotal = setindex.indexOf(total);
 	setnumbers = settochoose[indexoftotal];
@@ -55,6 +56,41 @@ function fixlevers() {
 		}
 	}
 }
+function clearlevers() {
+	swal({
+		title: "<h4 id='swalsumgreater'>The sum of the levers is greater than the dice total!</h4>",
+		imageUrl: "die-6.gif",
+		timer: 30000,
+		showConfirmButton: true,
+		html: true
+	});
+	for (var i = 0; i < leverdown.length; i++) {
+		if (!leverfixed[i]) {
+			switch (i) {
+				case 0: if (leverdown[0]) upMove1();
+					break;
+				case 1: if (leverdown[1]) upMove2();
+					break;
+				case 2: if (leverdown[2]) upMove3();
+					break;
+				case 3: if (leverdown[3]) upMove4();
+					break;
+				case 4: if (leverdown[4]) upMove5();
+					break;
+				case 5: if (leverdown[5]) upMove6();
+					break;
+				case 6: if (leverdown[6]) upMove7();
+					break;
+				case 7: if (leverdown[7]) upMove8();
+					break;
+				case 8: if (leverdown[8]) upMove9();
+					break;
+			}
+			leverdown[i] = false;
+		}
+	}
+	levertotal = 0;
+}
 function downMove1() {
 	if (!leverdown[0]) {
 		var elem = document.getElementById("lever1");
@@ -68,6 +104,7 @@ function downMove1() {
 				levertotal = levertotal + 1;
 				$("#lever1").html('');
 				if (levertotal === dicetotal) fixlevers();
+				if (levertotal > dicetotal) clearlevers();
 			}
 			else {
 				pos++;
@@ -89,6 +126,7 @@ function downMove2() {
 				levertotal = levertotal + 2;
 				$("#lever2").html('');
 				if (levertotal === dicetotal) fixlevers();
+				if (levertotal > dicetotal) clearlevers();
 			}
 			else {
 				pos++;
@@ -110,6 +148,7 @@ function downMove3() {
 				levertotal = levertotal + 3;
 				$("#lever3").html('');
 				if (levertotal === dicetotal) fixlevers();
+				if (levertotal > dicetotal) clearlevers();
 			}
 			else {
 				pos++;
@@ -131,6 +170,7 @@ function downMove4() {
 				levertotal = levertotal + 4;
 				$("#lever4").html('');
 				if (levertotal === dicetotal) fixlevers();
+				if (levertotal > dicetotal) clearlevers();
 			}
 			else {
 				pos++;
@@ -152,6 +192,7 @@ function downMove5() {
 				levertotal = levertotal + 5;
 				$("#lever5").html('');
 				if (levertotal === dicetotal) fixlevers();
+				if (levertotal > dicetotal) clearlevers();
 			}
 			else {
 				pos++;
@@ -173,6 +214,7 @@ function downMove6() {
 				levertotal = levertotal + 6;
 				$("#lever6").html('');
 				if (levertotal === dicetotal) fixlevers();
+				if (levertotal > dicetotal) clearlevers();
 			}
 			else {
 				pos++;
@@ -194,6 +236,7 @@ function downMove7() {
 				levertotal = levertotal + 7;
 				$("#lever7").html('');
 				if (levertotal === dicetotal) fixlevers();
+				if (levertotal > dicetotal) clearlevers();
 			}
 			else {
 				pos++;
@@ -215,6 +258,7 @@ function downMove8() {
 				levertotal = levertotal + 8;
 				$("#lever8").html('');
 				if (levertotal === dicetotal) fixlevers();
+				if (levertotal > dicetotal) clearlevers();
 			}
 			else {
 				pos++;
@@ -236,6 +280,7 @@ function downMove9() {
 				levertotal = levertotal + 9;
 				$("#lever9").html('');
 				if (levertotal === dicetotal) fixlevers();
+				if (levertotal > dicetotal) clearlevers();
 			}
 			else {
 				pos++;
@@ -254,7 +299,6 @@ function upMove1() {
 			if (pos === 50) {
 				clearInterval(id);
 				leverdown[0] = false;
-				levertotal = levertotal - 1;
 			}
 			else {
 				pos--;
@@ -273,7 +317,6 @@ function upMove2() {
 			if (pos === 50) {
 				clearInterval(id);
 				leverdown[1] = false;
-				levertotal = levertotal - 2;
 			}
 			else {
 				pos--;
@@ -292,7 +335,6 @@ function upMove3() {
 			if (pos === 50) {
 				clearInterval(id);
 				leverdown[2] = false;
-				levertotal = levertotal - 3;
 			}
 			else {
 				pos--;
@@ -311,7 +353,6 @@ function upMove4() {
 			if (pos === 50) {
 				clearInterval(id);
 				leverdown[3] = false;
-				levertotal = levertotal - 4;
 			}
 			else {
 				pos--;
@@ -330,7 +371,6 @@ function upMove5() {
 			if (pos === 50) {
 				clearInterval(id);
 				leverdown[4] = false;
-				levertotal = levertotal - 5;
 			}
 			else {
 				pos--;
@@ -349,7 +389,6 @@ function upMove6() {
 			if (pos === 50) {
 				clearInterval(id);
 				leverdown[5] = false;
-				levertotal = levertotal - 6;
 			}
 			else {
 				pos--;
@@ -368,7 +407,6 @@ function upMove7() {
 			if (pos === 50) {
 				clearInterval(id);
 				leverdown[6] = false;
-				levertotal = levertotal - 7;
 			}
 			else {
 				pos--;
@@ -387,7 +425,6 @@ function upMove8() {
 			if (pos === 50) {
 				clearInterval(id);
 				leverdown[7] = false;
-				levertotal = levertotal - 8;
 			}
 			else {
 				pos--;
@@ -406,7 +443,6 @@ function upMove9() {
 			if (pos === 50) {
 				clearInterval(id);
 				leverdown[8] = false;
-				levertotal = levertotal - 9;
 			}
 			else {
 				pos--;
