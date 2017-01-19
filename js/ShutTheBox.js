@@ -52,6 +52,10 @@ ShutTheBox.callback = function(total, info, results) {
 		if (sum === total) break;
 	}
 }
+function checklevers() {
+	if (levertotal === dicetotal) fixlevers();
+	if (levertotal > dicetotal) clearlevers();
+}
 function fixlevers() {
 	swal({
 		title: "<h4 id='swalsumequal'>The sum of the levers is equal to the dice total!</h4>",
@@ -123,8 +127,7 @@ function downMove1() {
 				leverdown[0] = true;
 				levertotal = levertotal + 1;
 				$("#lever1").html('');
-				if (levertotal === dicetotal) fixlevers();
-				if (levertotal > dicetotal) clearlevers();
+				checklevers();
 			}
 			else {
 				pos++;
@@ -145,8 +148,7 @@ function downMove2() {
 				leverdown[1] = true;
 				levertotal = levertotal + 2;
 				$("#lever2").html('');
-				if (levertotal === dicetotal) fixlevers();
-				if (levertotal > dicetotal) clearlevers();
+				checklevers();
 			}
 			else {
 				pos++;
@@ -167,8 +169,7 @@ function downMove3() {
 				leverdown[2] = true;
 				levertotal = levertotal + 3;
 				$("#lever3").html('');
-				if (levertotal === dicetotal) fixlevers();
-				if (levertotal > dicetotal) clearlevers();
+				checklevers();
 			}
 			else {
 				pos++;
@@ -189,8 +190,7 @@ function downMove4() {
 				leverdown[3] = true;
 				levertotal = levertotal + 4;
 				$("#lever4").html('');
-				if (levertotal === dicetotal) fixlevers();
-				if (levertotal > dicetotal) clearlevers();
+				checklevers();
 			}
 			else {
 				pos++;
@@ -211,8 +211,7 @@ function downMove5() {
 				leverdown[4] = true;
 				levertotal = levertotal + 5;
 				$("#lever5").html('');
-				if (levertotal === dicetotal) fixlevers();
-				if (levertotal > dicetotal) clearlevers();
+				checklevers();
 			}
 			else {
 				pos++;
@@ -233,8 +232,7 @@ function downMove6() {
 				leverdown[5] = true;
 				levertotal = levertotal + 6;
 				$("#lever6").html('');
-				if (levertotal === dicetotal) fixlevers();
-				if (levertotal > dicetotal) clearlevers();
+				checklevers();
 			}
 			else {
 				pos++;
@@ -255,8 +253,7 @@ function downMove7() {
 				leverdown[6] = true;
 				levertotal = levertotal + 7;
 				$("#lever7").html('');
-				if (levertotal === dicetotal) fixlevers();
-				if (levertotal > dicetotal) clearlevers();
+				checklevers();
 			}
 			else {
 				pos++;
@@ -277,8 +274,7 @@ function downMove8() {
 				leverdown[7] = true;
 				levertotal = levertotal + 8;
 				$("#lever8").html('');
-				if (levertotal === dicetotal) fixlevers();
-				if (levertotal > dicetotal) clearlevers();
+				checklevers();
 			}
 			else {
 				pos++;
@@ -299,8 +295,7 @@ function downMove9() {
 				leverdown[8] = true;
 				levertotal = levertotal + 9;
 				$("#lever9").html('');
-				if (levertotal === dicetotal) fixlevers();
-				if (levertotal > dicetotal) clearlevers();
+				checklevers();
 			}
 			else {
 				pos++;
