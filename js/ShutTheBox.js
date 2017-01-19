@@ -12,6 +12,15 @@ ShutTheBox.callback = function(total, info, results) {
 	dicetotal = total;
 	levertotal = 0;
 	$("#dicebutton").prop('disabled', true);
+	$("#button1").prop('disabled', false);
+	$("#button2").prop('disabled', false);
+	$("#button3").prop('disabled', false);
+	$("#button4").prop('disabled', false);
+	$("#button5").prop('disabled', false);
+	$("#button6").prop('disabled', false);
+	$("#button7").prop('disabled', false);
+	$("#button8").prop('disabled', false);
+	$("#button9").prop('disabled', false);
 	info.result_string = "(" + results[0] + "," + results[1] + ")";
 	indexoftotal = setindex.indexOf(total);
 	setnumbers = settochoose[indexoftotal];
