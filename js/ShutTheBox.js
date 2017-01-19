@@ -66,6 +66,15 @@ function fixlevers() {
 		}
 	}
 	$("#dicebutton").prop('disabled', false);
+	$("#button1").prop('disabled', true);
+	$("#button2").prop('disabled', true);
+	$("#button3").prop('disabled', true);
+	$("#button4").prop('disabled', true);
+	$("#button5").prop('disabled', true);
+	$("#button6").prop('disabled', true);
+	$("#button7").prop('disabled', true);
+	$("#button8").prop('disabled', true);
+	$("#button9").prop('disabled', true);
 }
 function clearlevers() {
 	swal({
