@@ -91,23 +91,23 @@ function clearlevers() {
 	for (var i = 0; i < leverdown.length; i++) {
 		if (!leverfixed[i]) {
 			switch (i) {
-				case 0: if (leverdown[0]) upMove1();
+				case 0: if (leverdown[0]) upMove(1);
 					break;
-				case 1: if (leverdown[1]) upMove2();
+				case 1: if (leverdown[1]) upMove(2);
 					break;
-				case 2: if (leverdown[2]) upMove3();
+				case 2: if (leverdown[2]) upMove(3);
 					break;
-				case 3: if (leverdown[3]) upMove4();
+				case 3: if (leverdown[3]) upMove(4);
 					break;
-				case 4: if (leverdown[4]) upMove5();
+				case 4: if (leverdown[4]) upMove(5);
 					break;
-				case 5: if (leverdown[5]) upMove6();
+				case 5: if (leverdown[5]) upMove(6);
 					break;
-				case 6: if (leverdown[6]) upMove7();
+				case 6: if (leverdown[6]) upMove(7);
 					break;
-				case 7: if (leverdown[7]) upMove8();
+				case 7: if (leverdown[7]) upMove(8);
 					break;
-				case 8: if (leverdown[8]) upMove9();
+				case 8: if (leverdown[8]) upMove(9);
 					break;
 			}
 			leverdown[i] = false;
@@ -136,160 +136,16 @@ function downMove(lever) {
 		}
 	}
 }
-function upMove1() {
-	if (leverdown[0]) {
-		var elem = document.getElementById("lever1");
-		$("#lever1").html('1');
+function upMove(lever) {
+	if (leverdown[lever - 1]) {
+		var elem = document.getElementById("lever" + lever);
+		$("#lever" + lever).html(lever);
 		var pos = 100;
 		var id = setInterval(frame, 10);
 		function frame() {
 			if (pos === 50) {
 				clearInterval(id);
-				leverdown[0] = false;
-			}
-			else {
-				pos--;
-				elem.style.top = pos + 'px';
-			}
-		}
-	}
-}
-function upMove2() {
-	if (leverdown[1]) {
-		var elem = document.getElementById("lever2");
-		$("#lever2").html('2');
-		var pos = 100;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (pos === 50) {
-				clearInterval(id);
-				leverdown[1] = false;
-			}
-			else {
-				pos--;
-				elem.style.top = pos + 'px';
-			}
-		}
-	}
-}
-function upMove3() {
-	if (leverdown[2]) {
-		var elem = document.getElementById("lever3");
-		$("#lever3").html('3');
-		var pos = 100;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (pos === 50) {
-				clearInterval(id);
-				leverdown[2] = false;
-			}
-			else {
-				pos--;
-				elem.style.top = pos + 'px';
-			}
-		}
-	}
-}
-function upMove4() {
-	if (leverdown[3]) {
-		var elem = document.getElementById("lever4");
-		$("#lever4").html('4');
-		var pos = 100;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (pos === 50) {
-				clearInterval(id);
-				leverdown[3] = false;
-			}
-			else {
-				pos--;
-				elem.style.top = pos + 'px';
-			}
-		}
-	}
-}
-function upMove5() {
-	if (leverdown[4]) {
-		var elem = document.getElementById("lever5");
-		$("#lever5").html('5');
-		var pos = 100;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (pos === 50) {
-				clearInterval(id);
-				leverdown[4] = false;
-			}
-			else {
-				pos--;
-				elem.style.top = pos + 'px';
-			}
-		}
-	}
-}
-function upMove6() {
-	if (leverdown[5]) {
-		var elem = document.getElementById("lever6");
-		$("#lever6").html('6');
-		var pos = 100;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (pos === 50) {
-				clearInterval(id);
-				leverdown[5] = false;
-			}
-			else {
-				pos--;
-				elem.style.top = pos + 'px';
-			}
-		}
-	}
-}
-function upMove7() {
-	if (leverdown[6]) {
-		var elem = document.getElementById("lever7");
-		$("#lever7").html('7');
-		var pos = 100;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (pos === 50) {
-				clearInterval(id);
-				leverdown[6] = false;
-			}
-			else {
-				pos--;
-				elem.style.top = pos + 'px';
-			}
-		}
-	}
-}
-function upMove8() {
-	if (leverdown[7]) {
-		var elem = document.getElementById("lever8");
-		$("#lever8").html('8');
-		var pos = 100;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (pos === 50) {
-				clearInterval(id);
-				leverdown[7] = false;
-			}
-			else {
-				pos--;
-				elem.style.top = pos + 'px';
-			}
-		}
-	}
-}
-function upMove9() {
-	if (leverdown[8]) {
-		var elem = document.getElementById("lever9");
-		$("#lever9").html('9');
-		var pos = 100;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (pos === 50) {
-				clearInterval(id);
-				leverdown[8] = false;
+				leverdown[lever - 1] = false;
 			}
 			else {
 				pos--;
