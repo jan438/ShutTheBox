@@ -90,26 +90,7 @@ function clearlevers() {
 	});
 	for (var i = 0; i < leverdown.length; i++) {
 		if (!leverfixed[i]) {
-			switch (i) {
-				case 0: if (leverdown[0]) upMove(1);
-					break;
-				case 1: if (leverdown[1]) upMove(2);
-					break;
-				case 2: if (leverdown[2]) upMove(3);
-					break;
-				case 3: if (leverdown[3]) upMove(4);
-					break;
-				case 4: if (leverdown[4]) upMove(5);
-					break;
-				case 5: if (leverdown[5]) upMove(6);
-					break;
-				case 6: if (leverdown[6]) upMove(7);
-					break;
-				case 7: if (leverdown[7]) upMove(8);
-					break;
-				case 8: if (leverdown[8]) upMove(9);
-					break;
-			}
+			if (leverdown[i]) upMove(i + 1);
 			leverdown[i] = false;
 		}
 	}
