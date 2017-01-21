@@ -89,6 +89,41 @@ function possibilitycheck() {
 	var result = true;
 	indexoftotal = setindex.indexOf(dicetotal);
 	setnumbers = settochoose[indexoftotal];
+	for (var i = 0; i < setnumbers.length; i++) {
+		var sum = 0;
+		for (var j = 0; j < setnumbers[i].length; j++) {
+			var levernumber = setnumbers[i][j];
+			switch (levernumber) {
+				case 1: if (!leverfixed[0]) sum = sum + levernumber;
+					break;
+				case 2: if (!leverfixed[1]) sum = sum + levernumber;
+					break;
+				case 3: if (!leverfixed[2]) sum = sum + levernumber;
+					break;
+				case 4: if (!leverfixed[3]) sum = sum + levernumber;
+					break;
+				case 5: if (!leverfixed[4]) sum = sum + levernumber;
+					break;
+				case 6: if (!leverfixed[5]) sum = sum + levernumber;
+					break;
+				case 7: if (!leverfixed[6]) sum = sum + levernumber;
+					break;
+				case 8: if (!leverfixed[7]) sum = sum + levernumber;
+					break;
+				case 9: if (!leverfixed[8]) sum = sum + levernumber;
+					break;
+			}
+		}
+		if (sum === dicetotal) return result;
+	}
+	result = false;
+	swal({
+		title: "<h4 id='swalnopossibilities'>There are no possibilties!</h4>",
+		imageUrl: "die-6.gif",
+		timer: 30000,
+		showConfirmButton: true,
+		html: true
+	});
 	return result;
 }
 function clearlevers() {
