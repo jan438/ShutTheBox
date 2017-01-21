@@ -87,6 +87,8 @@ function fixlevers() {
 }
 function possibilitycheck() {
 	var result = true;
+	indexoftotal = setindex.indexOf(dicetotal);
+	setnumbers = settochoose[indexoftotal];
 	return result;
 }
 function clearlevers() {
