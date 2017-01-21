@@ -124,6 +124,13 @@ function possibilitycheck() {
 		showConfirmButton: true,
 		html: true
 	});
+	for (var i = 0; i < leverdown.length; i++) {
+		if (!leverfixed[i]) {
+			if (leverdown[i]) upMove(i + 1);
+			leverdown[i] = false;
+		}
+	}
+	levertotal = 0;
 	return result;
 }
 function clearlevers() {
