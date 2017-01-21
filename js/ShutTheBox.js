@@ -54,7 +54,12 @@ ShutTheBox.callback = function(total, info, results) {
 }
 function checklevers() {
 	if (levertotal === dicetotal) fixlevers();
-	if (levertotal > dicetotal) clearlevers();
+	else {
+		var result = possibilitycheck();
+		if (result) {
+			if (levertotal > dicetotal) clearlevers();
+		}
+	}
 }
 function fixlevers() {
 	swal({
@@ -79,6 +84,10 @@ function fixlevers() {
 	$("#button7").prop('disabled', true);
 	$("#button8").prop('disabled', true);
 	$("#button9").prop('disabled', true);
+}
+function possibilitycheck() {
+	var result = true;
+	return result;
 }
 function clearlevers() {
 	swal({
