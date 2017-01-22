@@ -12,15 +12,33 @@ ShutTheBox.callback = function(total, info, results) {
 	dicetotal = total;
 	levertotal = 0;
 	$("#dicebutton").prop('disabled', true);
-	$("#button1").prop('disabled', false);
-	$("#button2").prop('disabled', false);
-	$("#button3").prop('disabled', false);
-	$("#button4").prop('disabled', false);
-	$("#button5").prop('disabled', false);
-	$("#button6").prop('disabled', false);
-	$("#button7").prop('disabled', false);
-	$("#button8").prop('disabled', false);
-	$("#button9").prop('disabled', false);
+	$("#lever1").on('click', function() {
+		downMove(1);
+	});
+	$("#lever2").on('click', function() {
+		downMove(2);
+	});
+	$("#lever3").on('click', function() {
+		downMove(3);
+	});
+	$("#lever4").on('click', function() {
+		downMove(4);
+	});
+	$("#lever5").on('click', function() {
+		downMove(5);
+	});
+	$("#lever6").on('click', function() {
+		downMove(6);
+	});
+	$("#lever7").on('click', function() {
+		downMove(7);
+	});
+	$("#lever8").on('click', function() {
+		downMove(8);
+	});
+	$("#lever9").on('click', function() {
+		downMove(9);
+	});
 	info.result_string = "(" + results[0] + "," + results[1] + ")";
 	indexoftotal = setindex.indexOf(total);
 	setnumbers = settochoose[indexoftotal];
@@ -75,15 +93,15 @@ function fixlevers() {
 		}
 	}
 	$("#dicebutton").prop('disabled', false);
-	$("#button1").prop('disabled', true);
-	$("#button2").prop('disabled', true);
-	$("#button3").prop('disabled', true);
-	$("#button4").prop('disabled', true);
-	$("#button5").prop('disabled', true);
-	$("#button6").prop('disabled', true);
-	$("#button7").prop('disabled', true);
-	$("#button8").prop('disabled', true);
-	$("#button9").prop('disabled', true);
+	$("#lever1").off('click');
+	$("#lever2").off('click');
+	$("#lever3").off('click');
+	$("#lever4").off('click');
+	$("#lever5").off('click');
+	$("#lever6").off('click');
+	$("#lever7").off('click');
+	$("#lever8").off('click');
+	$("#lever9").off('click');
 }
 function possibilitycheck() {
 	var result = true;

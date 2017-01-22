@@ -48,18 +48,45 @@
 		</div>
 	</div>
 </div>
-<p><button id="button1" onclick="downMove(1)">Lever 1</button><button id="button2" onclick="downMove(2)">Lever 2</button><button id="button3" onclick="downMove(3)">Lever 3</button><button id="button4" onclick="downMove(4)">Lever 4</button><button id="button5" onclick="downMove(5)">Lever 5</button><button id="button6" onclick="downMove(6)">Lever 6</button><button id="button7" onclick="downMove(7)">Lever 7</button><button id="button8" onclick="downMove(8)">Lever 8</button><button id="button9" onclick="downMove(9)">Lever 9</button></p>
 <script type="text/javascript">
 	$(document).ready(function () {
-		$("#button1").prop('disabled', true);
-		$("#button2").prop('disabled', true);
-		$("#button3").prop('disabled', true);
-		$("#button4").prop('disabled', true);
-		$("#button5").prop('disabled', true);
-		$("#button6").prop('disabled', true);
-		$("#button7").prop('disabled', true);
-		$("#button8").prop('disabled', true);
-		$("#button9").prop('disabled', true);
+		$("#dicebutton").prop('disabled', false);
+		$("#lever1").on('click', function() {
+			downMove(1);
+		});
+		$("#lever2").on('click', function() {
+			downMove(2);
+		});
+		$("#lever3").on('click', function() {
+			downMove(3);
+		});
+		$("#lever4").on('click', function() {
+			downMove(4);
+		});
+		$("#lever5").on('click', function() {
+			downMove(5);
+		});
+		$("#lever6").on('click', function() {
+			downMove(6);
+		});
+		$("#lever7").on('click', function() {
+			downMove(7);
+		});
+		$("#lever8").on('click', function() {
+			downMove(8);
+		});
+		$("#lever9").on('click', function() {
+			downMove(9);
+		});
+		$("#lever1").off('click');
+		$("#lever2").off('click');
+		$("#lever3").off('click');
+		$("#lever4").off('click');
+		$("#lever5").off('click');
+		$("#lever6").off('click');
+		$("#lever7").off('click');
+		$("#lever8").off('click');
+		$("#lever9").off('click');
 	});
 </script>
 </body>
