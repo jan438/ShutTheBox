@@ -92,6 +92,22 @@ function fixlevers() {
 			leverfixed[i] = leverdown[i];
 		}
 	}
+	var alllevers = true;
+	for (var k = 0; k < leverfixed.length; k++) {
+		if (!leverfixed[k]) {
+			alllevers = false;
+			break;
+		}
+	}
+	if (alllevers) {
+		swal({
+			title: "<h4 id='swalwelldone'>Well done!</h4>",
+			imageUrl: "die-6.gif",
+			timer: 30000,
+			showConfirmButton: true,
+			html: true
+		});
+	}
 	$("#dicebutton").prop('disabled', false);
 	$("#lever1").off('click');
 	$("#lever2").off('click');
