@@ -107,8 +107,9 @@ function fixlevers() {
 			showConfirmButton: true,
 			html: true
 		});
+		$("#dicebutton").prop('disabled', true);
 	}
-	$("#dicebutton").prop('disabled', false);
+	else $("#dicebutton").prop('disabled', false);
 	$("#lever1").off('click');
 	$("#lever2").off('click');
 	$("#lever3").off('click');
