@@ -109,6 +109,7 @@ function fixlevers() {
 			html: true
 		});
 		$("#dicebutton").prop('disabled', true);
+		setTimeout(function() { location.reload(); }, 5000);
 	}
 	else $("#dicebutton").prop('disabled', false);
 	$("#lever1").off('click');
