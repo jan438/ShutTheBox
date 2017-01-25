@@ -77,6 +77,7 @@ function checklevers() {
 		if (result) {
 			if (levertotal > dicetotal) clearlevers();
 		}
+		else setTimeout(function() { location.reload(); }, 5000);
 	}
 }
 function fixlevers() {
