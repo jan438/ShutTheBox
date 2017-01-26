@@ -373,13 +373,15 @@ D6.dice = function(numDice, callback, callbackData, useImages, buttonLabel) {
 		"callback" : callback,
 		"callbackData" : callbackData
 	};
-	var genHtml = "<div id='diceall2'>" + builder.genDiceHtml(layout, D6.middleManCallback, middleManData);
-	if (buttonLabel != "none") {
-		genHtml += "<div id='diceform2'><form><input type='button' id='dicebutton2' value='" + buttonLabel + "' onclick='D6AnimBuilder.get(\"dice\").reset(); D6AnimBuilder.get(\"dice\").start()' /></form></div>";
+	if (numDice === 2) {
+		var genHtml = "<div id='diceall2'>" + builder.genDiceHtml(layout, D6.middleManCallback, middleManData);
+		if (buttonLabel != "none") {
+			genHtml += "<div id='diceform2'><form><input type='button' id='dicebutton2' value='" + buttonLabel + "' onclick='D6AnimBuilder.get(\"dice\").reset(); D6AnimBuilder.get(\"dice\").start()' /></form></div>";
+		}
+		genHtml += "</div>";
+		D6.genHtml = genHtml;
+		document.write(genHtml);
 	}
-	genHtml += "</div>";
-	D6.genHtml = genHtml;
-	document.write(genHtml);
 }
 D6.roll = function() {
 	D6AnimBuilder.get("dice").reset();
