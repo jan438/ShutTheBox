@@ -12,7 +12,7 @@ ShutTheBox.info = {sum: 0, result_string: "", results_id: "__results"};
 ShutTheBox.callback = function(total, info, results) {
 	dicetotal = total;
 	levertotal = 0;
-	$("#dicebutton").prop('disabled', true);
+	$("#dicebutton2").prop('disabled', true);
 	$("#lever1").on('click', function() {
 		downMove(1);
 	});
@@ -109,10 +109,10 @@ function fixlevers() {
 			showConfirmButton: true,
 			html: true
 		});
-		$("#dicebutton").prop('disabled', true);
+		$("#dicebutton2").prop('disabled', true);
 		setTimeout(function() { location.reload(); }, 5000);
 	}
-	else $("#dicebutton").prop('disabled', false);
+	else $("#dicebutton2").prop('disabled', false);
 	$("#lever1").off('click');
 	$("#lever2").off('click');
 	$("#lever3").off('click');
