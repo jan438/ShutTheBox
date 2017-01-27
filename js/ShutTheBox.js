@@ -41,35 +41,6 @@ ShutTheBox.callback = function(total, info, results) {
 		downMove(9);
 	});
 	info.result_string = "(" + results[0] + "," + results[1] + ")";
-	indexoftotal = setindex.indexOf(total);
-	setnumbers = settochoose[indexoftotal];
-	for (var i = 0; i < setnumbers.length; i++) {
-		var sum = 0;
-		for (var j = 0; j < setnumbers[i].length; j++) {
-			var levernumber = setnumbers[i][j];
-			switch (levernumber) {
-				case 1: if (!leverdown[0]) sum = sum + levernumber;
-					break;
-				case 2: if (!leverdown[1]) sum = sum + levernumber;
-					break;
-				case 3: if (!leverdown[2]) sum = sum + levernumber;
-					break;
-				case 4: if (!leverdown[3]) sum = sum + levernumber;
-					break;
-				case 5: if (!leverdown[4]) sum = sum + levernumber;
-					break;
-				case 6: if (!leverdown[5]) sum = sum + levernumber;
-					break;
-				case 7: if (!leverdown[6]) sum = sum + levernumber;
-					break;
-				case 8: if (!leverdown[7]) sum = sum + levernumber;
-					break;
-				case 9: if (!leverdown[8]) sum = sum + levernumber;
-					break;
-			}
-		}
-		if (sum === total) break;
-	}
 }
 function checklevers() {
 	if (levertotal === dicetotal) fixlevers();
