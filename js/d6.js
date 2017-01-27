@@ -389,7 +389,11 @@ D6.dice = function(numDice, callback, callbackData, useImages, buttonLabel) {
 		}
 		genHtml += "</div>";
 		D6.genHtml = genHtml;
-		document.write(genHtml);
+		var element;
+		element = document.getElementById("diceall2");
+		if (element) {
+			element.innerHTML = genHtml;
+		}
 	}
 }
 D6.roll = function() {
