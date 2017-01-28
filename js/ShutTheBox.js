@@ -65,6 +65,28 @@ function fixlevers() {
 			leverfixed[i] = leverdown[i];
 		}
 	}
+	var onlyone = !leverfixed[0];
+	for (var k = 1; k < leverfixed.length; k++) {
+		if (!leverfixed[k]) {
+			onlyone = false;
+			break;
+		}
+	}
+	if (onlyone) {
+		dicecount = 1;
+		D6.dice(dicecount, ShutTheBox.callback, ShutTheBox.info);
+		$("#dicebutton1").prop('disabled', false);
+		$("#lever1").off('click');
+		$("#lever2").off('click');
+		$("#lever3").off('click');
+		$("#lever4").off('click');
+		$("#lever5").off('click');
+		$("#lever6").off('click');
+		$("#lever7").off('click');
+		$("#lever8").off('click');
+		$("#lever9").off('click');
+		return;
+	}
 	var alllevers = true;
 	for (var k = 0; k < leverfixed.length; k++) {
 		if (!leverfixed[k]) {
