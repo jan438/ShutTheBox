@@ -63,6 +63,26 @@ function fixlevers() {
 	for (var i = 0; i < leverdown.length; i++) {
 		if (leverdown[i]) {
 			leverfixed[i] = leverdown[i];
+			switch (i) {
+				case 0: $("#lever1").css('background-color', 'blue');
+					break;
+				case 1: $("#lever2").css('background-color', 'blue');
+					break;
+				case 2: $("#lever3").css('background-color', 'blue');
+					break;
+				case 3: $("#lever4").css('background-color', 'blue');
+					break;
+				case 4: $("#lever5").css('background-color', 'blue');
+					break;
+				case 5: $("#lever6").css('background-color', 'blue');
+					break;
+				case 6: $("#lever7").css('background-color', 'blue');
+					break;
+				case 7: $("#lever8").css('background-color', 'blue');
+					break;
+				case 8: $("#lever9").css('background-color', 'blue');
+					break;
+			}
 		}
 	}
 	var onlyone = !leverfixed[0];
