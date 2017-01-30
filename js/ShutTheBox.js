@@ -6,6 +6,7 @@ var setindex = [1,2,3,4,5,6,7,8,9,10,11,12];
 var levertotal = 0;
 var dicetotal = 0;
 var dicecount = 2;
+var setpossible;
 var settochoose = [[[1]],[[2]],[[3],[2,1]],[[4],[3,1]],[[5],[4,1],[3,2]],[[6],[5,1],[4,2]],[[7],[6,1],[5,2],[4,3]],[[8],[7,1],[6,2],[5,3],[5,2,1],[4,3,1]],[[9],[8,1],[7,2],[6,2,1],[5,4],[5,3,1]],[[9,1],[8,2],[7,3],[7,2,1],[6,4],[6,3,1],[5,4,1],[5,3,2]],[[9,2],[8,3],[8,2,1],[7,4],[7,3,1],[6,5],[6,4,1],[6,3,2]],[[9,3],[9,2,1],[8,4],[8,3,1],[7,5],[7,4,1],[7,3,2],[6,5,1],[6,4,2],[5,4,3]]];
 var ShutTheBox = {};
 ShutTheBox.info = {sum: 0, result_string: "", results_id: "__results"};
@@ -49,6 +50,22 @@ ShutTheBox.callback = function(total, info, results) {
 	$("#lever7").removeClass('box-shadow');
 	$("#lever8").removeClass('box-shadow');
 	$("#lever9").removeClass('box-shadow');
+	indexoftotal = setindex.indexOf(dicetotal);
+	setnumbers = settochoose[indexoftotal];
+	for (var i = 0; i < setnumbers.length; i++) {
+		setpossible = true;
+		for (var j = 0; j < setnumbers[i].length; j++) {
+			var levernumber = setnumbers[i][j];
+			if (leverfixed[levernumber - 1]) setpossible = false;
+		}
+		if (setpossible) {
+			for (var j = 0; j < setnumbers[i].length; j++) {
+				var levernumber = setnumbers[i][j];
+				$("#lever" + levernumber).addClass('box-shadow');
+			}
+		}
+
+	}
 	info.result_string = "(" + results[0] + "," + results[1] + ")";
 }
 function checklevers() {
