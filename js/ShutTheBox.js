@@ -91,22 +91,31 @@ function fixlevers() {
 			leverfixed[i] = leverdown[i];
 			switch (i) {
 				case 0: $("#lever1").css('background-color', 'blue');
+					$("#lever1").removeClass('box-shadow');
 					break;
 				case 1: $("#lever2").css('background-color', 'blue');
+					$("#lever2").removeClass('box-shadow');
 					break;
 				case 2: $("#lever3").css('background-color', 'blue');
+					$("#lever3").removeClass('box-shadow');
 					break;
 				case 3: $("#lever4").css('background-color', 'blue');
+					$("#lever4").removeClass('box-shadow');
 					break;
 				case 4: $("#lever5").css('background-color', 'blue');
+					$("#lever5").removeClass('box-shadow');
 					break;
 				case 5: $("#lever6").css('background-color', 'blue');
+					$("#lever6").removeClass('box-shadow');
 					break;
 				case 6: $("#lever7").css('background-color', 'blue');
+					$("#lever7").removeClass('box-shadow');
 					break;
 				case 7: $("#lever8").css('background-color', 'blue');
+					$("#lever8").removeClass('box-shadow');
 					break;
 				case 8: $("#lever9").css('background-color', 'blue');
+					$("#lever9").removeClass('box-shadow');
 					break;
 			}
 		}
