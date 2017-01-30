@@ -40,6 +40,15 @@ ShutTheBox.callback = function(total, info, results) {
 	$("#lever9").on('click', function() {
 		downMove(9);
 	});
+	$("#lever1").removeClass('box-shadow');
+	$("#lever2").removeClass('box-shadow');
+	$("#lever3").removeClass('box-shadow');
+	$("#lever4").removeClass('box-shadow');
+	$("#lever5").removeClass('box-shadow');
+	$("#lever6").removeClass('box-shadow');
+	$("#lever7").removeClass('box-shadow');
+	$("#lever8").removeClass('box-shadow');
+	$("#lever9").removeClass('box-shadow');
 	info.result_string = "(" + results[0] + "," + results[1] + ")";
 }
 function checklevers() {
