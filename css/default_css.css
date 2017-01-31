@@ -7,8 +7,8 @@
 }
 .square{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   z-index: 20000;
   background-color: blue;
 }
@@ -109,12 +109,20 @@
   text-align: center;
 }
 #s1 {
-  left: 150px;
-  top: 150px;
+  left: 0px;
+  top: 0px;
 }
 #s2 {
-  left: 350px;
-  top: 150px;
+  left: 525px;
+  top: 0px;
+}
+#s3 {
+  left: 0px;
+  top: 175px;
+}
+#s4 {
+  left: 525px;
+  top: 175px;
 }
 .box-shadow {
   -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
