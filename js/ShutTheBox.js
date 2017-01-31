@@ -279,7 +279,10 @@ $(function() {
 	$('#s2').line(0,25,25,0, {color:"red"});
 	$('#s3').line(25,0,0,25, {color:"pink"});
 	$('#s4').line(0,0,25,25, {color:"red"});
-	$('#example').line(20,45,200,400, {color:"blue", style: "dashed"});
+	$('#example').line(25,25,525,25, {color:"blue", style: "dashed"});
+	$('#example').line(25,25,25,175, {color:"blue", style: "dashed"});
+	$('#example').line(25,175,525,175, {color:"blue", style: "dashed"});
+	$('#example').line(525,175,525,25, {color:"blue", style: "dashed"});
 	$('#example').line(0, 0, 550, 0, {color:"#0066ff", stroke:5, zindex:1001});
 	$('#example').line(0, 200, 550, 200, {color:"#0066ff", stroke:5, zindex:1001});
 	$('#example').line(0, 0, 0, 200, {color:"#0066ff", stroke:5, zindex:1001});
