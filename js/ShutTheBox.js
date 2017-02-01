@@ -119,6 +119,28 @@ function fixlevers() {
 					break;
 			}
 		}
+		else {
+			switch (i) {
+				case 0: $("#lever1").removeClass('box-shadow');
+					break;
+				case 1: $("#lever2").removeClass('box-shadow');
+					break;
+				case 2: $("#lever3").removeClass('box-shadow');
+					break;
+				case 3: $("#lever4").removeClass('box-shadow');
+					break;
+				case 4: $("#lever5").removeClass('box-shadow');
+					break;
+				case 5: $("#lever6").removeClass('box-shadow');
+					break;
+				case 6: $("#lever7").removeClass('box-shadow');
+					break;
+				case 7: $("#lever8").removeClass('box-shadow');
+					break;
+				case 8: $("#lever9").removeClass('box-shadow');
+					break;
+			}
+		}
 	}
 	var onlyone = !leverfixed[0];
 	for (var k = 1; k < leverfixed.length; k++) {
