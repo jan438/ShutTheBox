@@ -306,7 +306,7 @@ D6AnimBuilder.prototype.genDiceHtml = function(layout, callback, callbackData) {
 	for (var i=0; i<layout.length; ++i) {
 		if (dieCount >= numTotalImgs) break;
 		genHtml += "<div id='" + this.id + "_diceGroup_" + i + "' class='diceGroup'";
-		genHtml += " style='position: absolute; top: 70px; left: 255px;'>";
+		genHtml += " style='position: absolute; top: 270px; left: 255px; z-index: 1002'>";
 		var imgsThisRow = layout[i] * this.groupsize;
 		for (var j=0; j<imgsThisRow; ++j) {
 			++dieCount;
