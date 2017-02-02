@@ -49,7 +49,7 @@ D6Animator.getImageBank = function(key, baseUrl) {
 			baseUrl = D6Animator.baseUrl;
 		if (typeof baseUrl != "string") baseUrl = "";
 		imageBank.blank = new Image();
-		imageBank.blank.src = baseUrl + "blank.gif";
+		imageBank.blank.src = baseUrl + "die-6.gif";
 		var i;
 		for (i=1; i<7; ++i) {
 			whichDie = "die" + i;
@@ -312,7 +312,7 @@ D6AnimBuilder.prototype.genDiceHtml = function(layout, callback, callbackData) {
 			++dieCount;
 			if (dieCount > numTotalImgs) break;
 			if (this.useImages) {
-				genHtml += "<img id='" + this.id + dieCount + "' class='die' src='" + this.baseUrl + "blank.gif' />";
+				genHtml += "<img id='" + this.id + dieCount + "' class='die' src='" + this.baseUrl + "die-6.gif' />";
 			} else {
 				genHtml += "<span id='" + this.id + dieCount + "' class='dieNumber'>&nbsp;</span> ";
 			}
