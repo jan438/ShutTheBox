@@ -301,7 +301,18 @@ function upMove(lever) {
 	}
 }
 function lidonthebox() {
-	console.log("Lid on the box");
+	var elem = document.getElementById("lid");
+	var pos = 0;
+	var id = setInterval(frame, 10);
+	function frame() {
+		if (pos === -200) {
+			clearInterval(id);
+		}
+		else {
+			pos--;
+			elem.style.top = pos + 'px';
+		}
+	}
 }
 $(function() {
 	$('#s1').line(0,0,25,25, {color:"pink"});
