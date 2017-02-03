@@ -75,7 +75,10 @@ function checklevers() {
 		if (result) {
 			if (levertotal > dicetotal) clearlevers();
 		}
-		else setTimeout(function() { location.reload(); }, 5000);
+		else {
+			lidonthebox();
+			setTimeout(function() { location.reload(); }, 5000);
+		}
 	}
 }
 function fixlevers() {
@@ -180,6 +183,7 @@ function fixlevers() {
 			html: true
 		});
 		$("#dicebutton2").prop('disabled', true);
+		lidonthebox();
 		setTimeout(function() { location.reload(); }, 5000);
 	}
 	else $("#dicebutton2").prop('disabled', false);
@@ -295,6 +299,9 @@ function upMove(lever) {
 			}
 		}
 	}
+}
+function lidonthebox() {
+	console.log("Lid on the box");
 }
 $(function() {
 	$('#s1').line(0,0,25,25, {color:"pink"});
