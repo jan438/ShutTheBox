@@ -1,11 +1,11 @@
-#example{
+#example {
   position: relative;
   width: 550px;
   height: 200px;
   background-color: yellow;
   z-index: 10;
 }
-.square{
+.square {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -17,6 +17,14 @@
   height: 200px;
   position: relative;
   background: yellow;
+}
+#lid {
+  width: 550px;
+  height: 200px;
+  position: relative;
+}
+.cover {
+  background-color: blue;
 }
 #lever1 {
   top: 50px;
