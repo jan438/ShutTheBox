@@ -3,13 +3,11 @@
   width: 550px;
   height: 200px;
   background-color: yellow;
-  z-index: 10;
 }
 .square {
   position: absolute;
   width: 25px;
   height: 25px;
-  z-index: 20000;
   background-color: blue;
 }
 #myContainer {
