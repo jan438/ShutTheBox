@@ -21,6 +21,7 @@
   width: 550px;
   height: 200px;
   position: relative;
+  z-index: 10000;
 }
 .cover {
   background-color: blue;
