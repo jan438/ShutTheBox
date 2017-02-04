@@ -14,6 +14,8 @@ ShutTheBox.callback = function(total, info, results) {
 	dicetotal = total;
 	levertotal = 0;
 	$("#dicebutton2").prop('disabled', true);
+	$("#dicebutton2").css('background-color', 'red');
+	$("#dicebutton2").css('color', 'black');
 	$("#lever1").on('click', function() {
 		downMove(1);
 	});
@@ -156,6 +158,8 @@ function fixlevers() {
 		dicecount = 1;
 		D6.dice(dicecount, ShutTheBox.callback, ShutTheBox.info);
 		$("#dicebutton1").prop('disabled', false);
+		$("#dicebutton1").css('background-color', 'green');
+		$("#dicebutton1").css('color', 'white');
 		$("#lever1").off('click');
 		$("#lever2").off('click');
 		$("#lever3").off('click');
@@ -183,10 +187,16 @@ function fixlevers() {
 			html: true
 		});
 		$("#dicebutton2").prop('disabled', true);
+		$("#dicebutton2").css('background-color', 'red');
+		$("#dicebutton2").css('color', 'black');
 		lidonthebox();
 		setTimeout(function() { location.reload(); }, 5000);
 	}
-	else $("#dicebutton2").prop('disabled', false);
+	else {
+		$("#dicebutton2").prop('disabled', false);
+		$("#dicebutton2").css('background-color', 'green');
+		$("#dicebutton2").css('color', 'white');
+	}
 	$("#lever1").off('click');
 	$("#lever2").off('click');
 	$("#lever3").off('click');
