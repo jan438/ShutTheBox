@@ -333,9 +333,9 @@ $(function() {
 	$('#example').line(25,25,25,175, {color:"blue", style: "dashed", zindex: "1000"});
 	$('#example').line(25,175,525,175, {color:"blue", style: "dashed", zindex: "1000"});
 	$('#example').line(525,175,525,25, {color:"blue", style: "dashed", zindex: "1000"});
-	$('#example').line(0, 0, 550, 0, {color:"#0066ff", stroke:5, zindex: "1000"});
 	$('#example').line(0, 225, 550, 225, {color:"#0066ff", stroke:5, zindex: "1000"});
-	$('#example').line(0, 0, 0, 225, {color:"#0066ff", stroke:5, zindex: "1000"});
-	$('#example').line(550, 0, 550, 225, {color:"#0066ff", stroke:5, zindex: "1000"});
+	$('#example').line(0, 450, 550, 450, {color:"#0066ff", stroke:5, zindex: "1000"});
+	$('#example').line(0, 225, 0, 450, {color:"#0066ff", stroke:5, zindex: "1000"});
+	$('#example').line(550, 225, 550, 450, {color:"#0066ff", stroke:5, zindex: "1000"});
 });
 D6.dice(dicecount, ShutTheBox.callback, ShutTheBox.info);
