@@ -118,19 +118,19 @@
 }
 #s1 {
   left: 0px;
-  top: 0px;
+  top: 225px;
 }
 #s2 {
   left: 525px;
-  top: 0px;
+  top: 225px;
 }
 #s3 {
   left: 0px;
-  top: 175px;
+  top: 400px;
 }
 #s4 {
   left: 525px;
-  top: 175px;
+  top: 400px;
 }
 .box-shadow {
   -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
