@@ -329,10 +329,10 @@ $(function() {
 	$('#s2').line(0,25,25,0, {color:"red"});
 	$('#s3').line(25,0,0,25, {color:"pink"});
 	$('#s4').line(0,0,25,25, {color:"red"});
-	$('#example').line(25,25,525,25, {color:"blue", style: "dashed", zindex: "1000"});
-	$('#example').line(25,25,25,175, {color:"blue", style: "dashed", zindex: "1000"});
-	$('#example').line(25,175,525,175, {color:"blue", style: "dashed", zindex: "1000"});
-	$('#example').line(525,175,525,25, {color:"blue", style: "dashed", zindex: "1000"});
+	$('#example').line(25,250,525,250, {color:"blue", style: "dashed", zindex: "1000"});
+	$('#example').line(25,250,25,425, {color:"blue", style: "dashed", zindex: "1000"});
+	$('#example').line(25,425,525,425, {color:"blue", style: "dashed", zindex: "1000"});
+	$('#example').line(525,425,525,250, {color:"blue", style: "dashed", zindex: "1000"});
 	$('#example').line(0, 225, 550, 225, {color:"#0066ff", stroke:5, zindex: "1000"});
 	$('#example').line(0, 450, 550, 450, {color:"#0066ff", stroke:5, zindex: "1000"});
 	$('#example').line(0, 225, 0, 450, {color:"#0066ff", stroke:5, zindex: "1000"});
