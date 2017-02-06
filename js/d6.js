@@ -389,7 +389,6 @@ D6.dice = function(numDice, callback, callbackData, useImages, buttonLabel) {
 		if (buttonLabel != "none") {
 			genHtml += "<div id='diceform1'><form><input type='button' id='dicebutton1' value='" + buttonLabel + "' onclick='D6AnimBuilder.get(\"dice\").reset(); D6AnimBuilder.get(\"dice\").start()' /></form></div>";
 		}
-		genHtml += "</div>";
 		D6.genHtml = genHtml;
 		var element;
 		element = document.getElementById("diceall");
