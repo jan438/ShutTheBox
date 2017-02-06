@@ -374,7 +374,7 @@ D6.dice = function(numDice, callback, callbackData, useImages, buttonLabel) {
 		"callbackData" : callbackData
 	};
 	if (numDice === 2) {
-		var genHtml = "<div id='diceall2'";
+		var genHtml = "<div id='diceall'";
 		genHtml += " style='position: absolute; top: 460px; left: 255px; z-index: 1002'>";
 		genHtml += builder.genDiceHtml(layout, D6.middleManCallback, middleManData);
 		if (buttonLabel != "none") {
@@ -385,16 +385,14 @@ D6.dice = function(numDice, callback, callbackData, useImages, buttonLabel) {
 		document.write(genHtml);
 	}
 	if (numDice === 1) {
-		var genHtml = "<div id='diceall1'"
-		genHtml += " style='position: absolute; top: 460px; left: 255px; z-index: 1002'>";
-		genHtml += builder.genDiceHtml(layout, D6.middleManCallback, middleManData);
+		var genHtml = builder.genDiceHtml(layout, D6.middleManCallback, middleManData);
 		if (buttonLabel != "none") {
 			genHtml += "<div id='diceform1'><form><input type='button' id='dicebutton1' value='" + buttonLabel + "' onclick='D6AnimBuilder.get(\"dice\").reset(); D6AnimBuilder.get(\"dice\").start()' /></form></div>";
 		}
 		genHtml += "</div>";
 		D6.genHtml = genHtml;
 		var element;
-		element = document.getElementById("diceall2");
+		element = document.getElementById("diceall");
 		if (element) {
 			element.innerHTML = genHtml;
 		}
