@@ -305,8 +305,7 @@ D6AnimBuilder.prototype.genDiceHtml = function(layout, callback, callbackData) {
 	var numTotalImgs = this.groupsize * this.numGroups;
 	for (var i=0; i<layout.length; ++i) {
 		if (dieCount >= numTotalImgs) break;
-		genHtml += "<div id='" + this.id + "_diceGroup_" + i + "' class='diceGroup'";
-		genHtml += " style='position: absolute; top: 270px; left: 255px; z-index: 1002'>";
+		genHtml += "<div id='" + this.id + "_diceGroup_" + i + "' class='diceGroup'>";
 		var imgsThisRow = layout[i] * this.groupsize;
 		for (var j=0; j<imgsThisRow; ++j) {
 			++dieCount;
@@ -375,7 +374,9 @@ D6.dice = function(numDice, callback, callbackData, useImages, buttonLabel) {
 		"callbackData" : callbackData
 	};
 	if (numDice === 2) {
-		var genHtml = "<div id='diceall2'>" + builder.genDiceHtml(layout, D6.middleManCallback, middleManData);
+		var genHtml = "<div id='diceall2'";
+		genHtml += " style='position: absolute; top: 460px; left: 255px; z-index: 1002'>";
+		genHtml += builder.genDiceHtml(layout, D6.middleManCallback, middleManData);
 		if (buttonLabel != "none") {
 			genHtml += "<div id='diceform2'><form><input type='button' id='dicebutton2' value='" + buttonLabel + "' onclick='D6AnimBuilder.get(\"dice\").reset(); D6AnimBuilder.get(\"dice\").start()' /></form></div>";
 		}
@@ -384,7 +385,9 @@ D6.dice = function(numDice, callback, callbackData, useImages, buttonLabel) {
 		document.write(genHtml);
 	}
 	if (numDice === 1) {
-		var genHtml = "<div id='diceall1'>" + builder.genDiceHtml(layout, D6.middleManCallback, middleManData);
+		var genHtml = "<div id='diceall1'"
+		genHtml += " style='position: absolute; top: 460px; left: 255px; z-index: 1002'>";
+		genHtml += builder.genDiceHtml(layout, D6.middleManCallback, middleManData);
 		if (buttonLabel != "none") {
 			genHtml += "<div id='diceform1'><form><input type='button' id='dicebutton1' value='" + buttonLabel + "' onclick='D6AnimBuilder.get(\"dice\").reset(); D6AnimBuilder.get(\"dice\").start()' /></form></div>";
 		}

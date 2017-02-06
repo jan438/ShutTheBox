@@ -1,7 +1,7 @@
 #example {
   position: relative;
   width: 550px;
-  height: 200px;
+  height: 225px;
   background-color: yellow;
 }
 .square {
@@ -13,13 +13,13 @@
 }
 #myContainer {
   width: 550px;
-  height: 200px;
+  height: 225px;
   position: relative;
   background: yellow;
 }
 #lid {
   width: 550px;
-  height: 200px;
+  height: 225px;
   position: relative;
   z-index: 10000;
 }

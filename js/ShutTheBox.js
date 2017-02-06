@@ -315,11 +315,11 @@ function lidonthebox() {
 	var pos = 0;
 	var id = setInterval(frame, 10);
 	function frame() {
-		if (pos === -200) {
+		if (pos === 225) {
 			clearInterval(id);
 		}
 		else {
-			pos--;
+			pos++;
 			elem.style.top = pos + 'px';
 		}
 	}
@@ -334,8 +334,8 @@ $(function() {
 	$('#example').line(25,175,525,175, {color:"blue", style: "dashed", zindex: "1000"});
 	$('#example').line(525,175,525,25, {color:"blue", style: "dashed", zindex: "1000"});
 	$('#example').line(0, 0, 550, 0, {color:"#0066ff", stroke:5, zindex: "1000"});
-	$('#example').line(0, 200, 550, 200, {color:"#0066ff", stroke:5, zindex: "1000"});
-	$('#example').line(0, 0, 0, 200, {color:"#0066ff", stroke:5, zindex: "1000"});
-	$('#example').line(550, 0, 550, 200, {color:"#0066ff", stroke:5, zindex: "1000"});
+	$('#example').line(0, 225, 550, 225, {color:"#0066ff", stroke:5, zindex: "1000"});
+	$('#example').line(0, 0, 0, 225, {color:"#0066ff", stroke:5, zindex: "1000"});
+	$('#example').line(550, 0, 550, 225, {color:"#0066ff", stroke:5, zindex: "1000"});
 });
 D6.dice(dicecount, ShutTheBox.callback, ShutTheBox.info);
