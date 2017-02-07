@@ -16,6 +16,9 @@ ShutTheBox.callback = function(total, info, results) {
 	$("#dicebutton2").prop('disabled', true);
 	$("#dicebutton2").css('background-color', 'red');
 	$("#dicebutton2").css('color', 'black');
+	$("#dicebutton1").prop('disabled', true);
+	$("#dicebutton1").css('background-color', 'red');
+	$("#dicebutton1").css('color', 'black');
 	$("#lever1").on('click', function() {
 		downMove(1);
 	});
